@@ -26,18 +26,20 @@ input {
 button {
     box-sizing: border-box;
     margin-top: 0;
+    margin-right: 30px;
     padding: 0 16px;
     font-size: 14px;
     height: 36px;
-    background-color: #f8f9fa;
+    background-color: #dfe1e5;
     border: 1px solid #f8f9fa;
+    border-radius:15px;
     cursor: pointer;
 }
 
-button:first-of-type {
+/* button:first-of-type {
     margin-right: 8px;
     margin-left: calc(50% - 131.5px);
-}
+} */
 
 button::hover {
     cursor: pointer;   
@@ -48,3 +50,8 @@ p {
     text-align:center;
 }
 
+
+.buttons {
+    display:flex;
+    justify-content: center;
+}
