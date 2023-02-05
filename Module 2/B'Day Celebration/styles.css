@@ -1,11 +1,14 @@
+
 body {
+    color:white;
+    background-color:#a2d2ff;
     font-family: 'Happy Monkey', cursive;
     /* font-family: 'Orbitron', sans-serif;*/
     text-align:center;
     }
 
 #picOfNick {
-    /* border:1px solid black; */
+    border:5px solid #EFB0C9;
     width:200px;
     border-radius: 50%;
     }
