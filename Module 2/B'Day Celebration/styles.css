@@ -35,7 +35,7 @@ header, #gifts {
     margin-bottom:0;
 }
 
-.gift1 {
+#gift1, #gift2 {
     width:400px;
     height:400px;
     border-radius: 10px;
@@ -47,7 +47,14 @@ header, #gifts {
 .hint {
     margin-top: 8px;
 }
+#gift2 {
+    margin-top: 40px;
+}
 
-.gift1:hover {
+#gift1:hover {
     background-image: url(images/happy.gif);
+}
+
+#gift2:hover {
+    background-image: url(images/hot.gif);
 }
