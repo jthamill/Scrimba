@@ -1,6 +1,8 @@
 body {
     margin:0;
+    font-family:'Dancing Script', cursive;
     box-sizing: border-box;
+    font-size: 20px;
     text-align:center;
 }   
 
@@ -30,13 +32,31 @@ body {
 }
 
 img {
+    margin-top: 10px;
     width:200px;
     height:150px;
     border:1px solid white;
     border-radius: 50%;
 }
 .activities {
+    color:white;
+    background-color: blueviolet;
+    border-radius: 6px;;
+    width:500px;
+    margin: 30px auto 0;
+    padding: 6px 10px;
     text-align: center;
+}
+
+.hover {
+    color:white;
+    background-color: black;
+    border-radius: 6px;
+    width:170px;
+    margin: 30px auto 30px;
+    padding: 4px 8px;
+    text-align: center;
+
 }
 
 #cards {
@@ -47,9 +67,11 @@ img {
 }
 
 .card {
-    width:300px;
+    background-color: lightpink;
+    width:400px;
     padding: 0 25px;
     margin-right:50px;
+    border-radius: 8px;
     text-align:center;
     display: flex;
     flex-direction: column;
@@ -58,7 +80,22 @@ img {
 
 .maid:hover, .skylon:hover, .wheel:hover {
     width:500px;
-    height:500px;
-    /* background-image: url(images/maid.jpg);
-    background-size: cover; */
+    height:500px;   
+}
+
+.guide {
+    color: white;
+    margin:30px auto;
+    padding:0 15px;
+    width: 500px;
+    border-radius: 8px;
+    background-color: blueviolet;
+    display:flex;
+    align-items: center;
+    border-bottom: 5px solid grey;;
+}
+
+.guide-img {
+    margin:0 10px;
+    width:150px;
 }
