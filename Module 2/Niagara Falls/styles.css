@@ -1,7 +1,7 @@
 body {
     margin:0;
     box-sizing: border-box;
-    align-items:center;
+    text-align:center;
 }   
 
 #hero {
@@ -48,8 +48,17 @@ img {
 
 .card {
     width:300px;
+    padding: 0 25px;
+    margin-right:50px;
     text-align:center;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.maid:hover, .skylon:hover, .wheel:hover {
+    width:500px;
+    height:500px;
+    /* background-image: url(images/maid.jpg);
+    background-size: cover; */
 }
