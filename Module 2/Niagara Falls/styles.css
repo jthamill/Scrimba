@@ -1,11 +1,12 @@
 body {
     margin:0;
     box-sizing: border-box;
+    align-items:center;
 }   
 
 #hero {
     color:white;
-    height:500px;
+    height:100vh;
     background-image:url(Images/niagara-falls-by-night-1-1920w.jpg);
     background-size: cover;
     display:flex;
@@ -14,14 +15,41 @@ body {
     align-items: center;
 }
 .city {
+    margin-top: 0px;
     background-color: blueviolet;
     padding:3px 8px;
     border-radius: 6px;;
 }
 .invitation {
+    margin-top:200px;
     width:500px;
     text-align: center;
     background-color: black;
-    padding:3px 8px;
+    padding:6px 8px;
     border-radius: 6px;;
+}
+
+img {
+    width:200px;
+    height:150px;
+    border:1px solid white;
+    border-radius: 50%;
+}
+.activities {
+    text-align: center;
+}
+
+#cards {
+    width:1000px;
+    margin:auto auto;
+    display:flex;
+    justify-content: space-around;
+}
+
+.card {
+    width:300px;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
