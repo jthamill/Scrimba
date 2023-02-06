@@ -1,6 +1,10 @@
 Scrimba Projects
 Google - inputs and buttons
+
 Bizz Card - IMG, Simple flex box - fbox only works on first level of children. S'times need to nest fbox's. Shadows
+
 Space Stn - background images, "hero" section, SPAN, fonts and font families, shadows
+
 Birthday - Fbox using "flex-direction columns" and text align, linear gradient, hover pseudo class
 
+Passenger Counter - changed mine to "Goal"Counter, 1st jscript, let variables, simple function, click/eventlistener, getelementbyid. innerText vs TextContent, using += to add to previous value - WORKS ON STRINGS TOO
