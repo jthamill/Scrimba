@@ -31,9 +31,11 @@ header, #gifts {
     flex-direction: column;
     align-items: center;
 }
-.reaction {
+.reaction, p {
     margin-top:50px;
     margin-bottom:0;
+    width:400px;
+    text-align:center;
 }
 
 #gift1, #gift2, #gift3, #gift4, #gift5 {
