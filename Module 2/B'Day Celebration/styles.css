@@ -36,10 +36,18 @@ header, #gifts {
 }
 
 .gift1 {
+    width:400px;
+    height:400px;
     border-radius: 10px;
     border: 6px solid white;
+    background-image: url("images/gift-cover.jpg");
+    background-size: cover;
 }
 
-.giftHover {
+.hint {
     margin-top: 8px;
+}
+
+.gift1:hover {
+    background-image: url(images/happy.gif);
 }
