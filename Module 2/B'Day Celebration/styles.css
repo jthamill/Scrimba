@@ -11,8 +11,12 @@ h1, h2, h3, h4, p {
     text-shadow: 0px 0px 1px black;
 }        
 
-h2, h4 {
+#bdayAge, #bdayDate {
     background-color: #EFB0C9;
+    padding:10px;
+    border-radius: 10px;
+    margin-bottom: 0;
+
 }
 
 #picOfNick {
@@ -21,8 +25,21 @@ h2, h4 {
     border-radius: 50%;
     }
 
-header {
+header, #gifts {
     display:flex;
     flex-direction: column;
     align-items: center;
-}    
+}
+.happy {
+    margin-top:40px;
+    margin-bottom:0;
+}
+
+.gift1 {
+    border-radius: 10px;
+    border: 6px solid white;
+}
+
+.giftHover {
+    margin-top: 8px;
+}
