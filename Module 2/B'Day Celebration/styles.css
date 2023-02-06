@@ -1,7 +1,7 @@
 
 body {
     color:white;
-    background-color:#a2d2ff;
+    background:linear-gradient(#a2d2ff, #EFB0C9);
     font-family: 'Happy Monkey', cursive;
     /* font-family: 'Orbitron', sans-serif;*/
     /* text-align:center; took it out after adding flex */
@@ -19,9 +19,10 @@ h1, h2, h3, h4, p {
 
 }
 
-#picOfNick {
+#picOfJeff {
     border:5px solid #EFB0C9;
-    width:200px;
+    width:130px;
+    height:135px;
     border-radius: 50%;
     }
 
@@ -30,24 +31,25 @@ header, #gifts {
     flex-direction: column;
     align-items: center;
 }
-.happy {
-    margin-top:40px;
+.reaction {
+    margin-top:50px;
     margin-bottom:0;
 }
 
-#gift1, #gift2 {
+#gift1, #gift2, #gift3, #gift4, #gift5 {
     width:400px;
     height:400px;
     border-radius: 10px;
     border: 6px solid white;
     background-image: url("images/gift-cover.jpg");
-    background-size: cover;
+    background-size: cover; 
 }
 
 .hint {
     margin-top: 8px;
 }
-#gift2 {
+
+#gift2, #gift3, #gift4, #gift5 {
     margin-top: 40px;
 }
 
@@ -57,4 +59,20 @@ header, #gifts {
 
 #gift2:hover {
     background-image: url(images/hot.gif);
+}
+
+#gift3:hover {
+    background-image: url(images/genius.gif);
+}
+
+#gift4:hover {
+    background-image: url(images/badass.gif);
+}
+
+#gift5 {
+    height:200px;
+}
+
+#gift5:hover {
+    background-image: url(images/cheers.gif);
 }
