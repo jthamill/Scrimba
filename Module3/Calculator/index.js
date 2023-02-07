@@ -12,9 +12,13 @@ document.getElementById("num2-el").textContent = num2
 // "Sum: 10" (since 8 + 2 = 10) inside the paragraph with id="sum-el"
 
 
+
+// did the add function differntly after, Prob better to get the element just once and put it in a variable :
+let output = document.getElementById("result-el")
+
 function add() {
     let result= num1+num2
-    document.getElementById("result-el").textContent = "Sum: "+result
+    output.textContent = "Sum: "+result
  }
 
  function subtract() {
