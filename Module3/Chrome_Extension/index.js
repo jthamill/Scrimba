@@ -19,10 +19,10 @@ inputBtn.addEventListener("click", () => {
     console.log(localStorage.getItem("myLeads"));
 })
 
-deleteBtn.addEventListener("click", () =>{
+deleteBtn.addEventListener("dblclick", () =>{
   localStorage.setItem("myLeads", null);
   myLeads = [];
-  renderLeads();
+  ulEl.innerHTML = null;
 })
 
 function renderLeads() {
