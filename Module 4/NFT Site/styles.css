@@ -33,6 +33,10 @@ h3 {
   color:#d0aaff;
 }
 
+p {
+  line-height: 23px;
+}
+
 /* Main Image */
 
 .sneakers-img {
@@ -42,13 +46,34 @@ h3 {
 
 /* anchor tags */
 
-a {
-  color: #ef5839;
-  text-decoration:underline dotted;
+.btn {
+  padding: 10px 19px;
+  border-radius: 4.6px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  margin-right:10px;
+
 }
 
-a:active, a:hover {
-  color:#d4b44c;
+.buy-btn {
+  background-color: #5f29a3;
+  color: whitesmoke
+}
+
+.moreInfo-btn {
+  background-color: #f0e0ff;
+  color:#5f29a3;
+}
+
+.about-btn, .contact-btn {
+  background-color: whitesmoke;
+  color:#5f29a3;
+}
+
+.btn:hover, .btn:active {
+  color:#2b283a;
+  background-color:#f3e885;
 }
 
 .crypto-section {
@@ -79,4 +104,7 @@ header, section, footer {
 
 header, .crypto-section {
   background-color: #5f29a3;
+}
+button {
+  padding:
 }
