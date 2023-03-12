@@ -12,21 +12,15 @@ body {
   margin: 0 auto;
 }
 
-header {
-  padding: 45px 0px;
-  background-color:#5f29a3;
-}
-
-section {
-  padding: 45px 0;
-}
-
 /* Typography */
+
+h1, h3 {
+  margin:0;
+}
 
 h1 {
   font-size: 36px;
   color:whitesmoke;
-  margin: 0;
 }
 
 h2 {
@@ -37,7 +31,6 @@ h2 {
 h3 {
   font-size: 20px;
   color:#d0aaff;
-  margin: 0;
 }
 
 /* Main Image */
@@ -56,4 +49,34 @@ a {
 
 a:active, a:hover {
   color:#d4b44c;
+}
+
+.crypto-section {
+    color:whitesmoke;
+}
+
+.crypto-image {
+  width:300px;
+  border-radius: 4.6px;
+}
+
+.crypto-images { 
+  display: flex;
+  justify-content:space-between;
+}
+
+footer {
+  font-size: 16px;
+  color:#5f29a3;
+  text-align: center;
+  font-weight: bold;
+  
+}
+
+header, section, footer {
+  padding: 45px 0;
+}
+
+header, .crypto-section {
+  background-color: #5f29a3;
 }
