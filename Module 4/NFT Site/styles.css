@@ -5,10 +5,23 @@ body {
   color: #2b283a;
 }
 
+/* Layout */
+
+.container {
+  width: 620px;
+  margin: 0 auto;
+}
+
 header {
   padding: 45px 0px;
   background-color:#5f29a3;
 }
+
+section {
+  padding: 45px 0;
+}
+
+/* Typography */
 
 h1 {
   font-size: 36px;
@@ -27,13 +40,14 @@ h3 {
   margin: 0;
 }
 
+/* Main Image */
+
 .sneakers-img {
   width:100%;
 } 
 
-section {
-  padding: 45px 0;
-}
+
+/* anchor tags */
 
 a {
   color: #ef5839;
