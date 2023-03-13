@@ -27,3 +27,12 @@ const posts = [
       likes: 152
   }
 ]
+
+const userImgEl=document.getElementById("user-pic");
+userImgEl.innerHTML = `<img src="${posts[0].avatar}" class="user-avatar" id="user-avatar" alt="Young image of artist"></img>`
+// userImgEl.innerHTML = `<div><p>Jeff</p></div>`;
+
+console.log(userImgEl.innerHTML);
+
+
+// "<img src="" class="user-avatar" id="user-avatar" alt="Young image of artist"></img>"
