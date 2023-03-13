@@ -6,7 +6,7 @@ const posts = [
       avatar: "images/avatar-vangogh.jpg",
       post: "images/post-vangogh.jpg",
       comment: "just took a few mushrooms lol",
-      likes: 21
+      likes: 25
   },
   {
       name: "Gustave Courbet",
@@ -27,12 +27,30 @@ const posts = [
       likes: 152
   }
 ]
+// populate artist info 
+const artistImgEl=document.getElementById("artist-pic");
+artistImgEl.innerHTML = `<img src="${posts[0].avatar}" class="artist-avatar" id="artist-avatar" alt="Young image of artist"></img>`
 
-const userImgEl=document.getElementById("user-pic");
-userImgEl.innerHTML = `<img src="${posts[0].avatar}" class="user-avatar" id="user-avatar" alt="Young image of artist"></img>`
-// userImgEl.innerHTML = `<div><p>Jeff</p></div>`;
+const artistDescrEl=document.getElementById("artist-descr");
+artistDescrEl.innerHTML = 
+`<span class="artist-full-name">${posts[0].name}</span>
+<span class="artist-location">${posts[0].location}</span>`
 
-console.log(userImgEl.innerHTML);
+// populate main image
+const postImageEl=document.getElementById("main-image");
+postImageEl.innerHTML =
+`<img class="post-image" src="${posts[0].post}" alt="Artist self portrait">`
+
+// Populate likes
+const likesEl = document.getElementById("likes-count");
+likesEl.innerText = posts[0].likes
+
+// Populate caption
+const captionEl = document.getElementById("caption");
+captionEl.innerHTML =
+`<span class="username">${posts[0].username}</span>
+<span class="comment">${posts[0].comment}</span>`
 
 
-// "<img src="" class="user-avatar" id="user-avatar" alt="Young image of artist"></img>"
+
+console.log(likesEl);
