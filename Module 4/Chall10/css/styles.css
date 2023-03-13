@@ -16,14 +16,21 @@ h2 {
     font-weight: 300; 
 }
 
-h1 {
-  letter-spacing: -3px;  
+h1 .accent-text {
   font-size: 80px;
+}
+
+h2 .accent-text {
+  font-size:60px
+}
+
+h1 {
+    font-size: 60px;
     margin-top: 0;
 }
 
 h2 {
-    font-size: 60px;
+    font-size: 42px;
     margin-top: 0;
     border-top: solid 1px #c4c4c4;
     border-bottom: solid 1px #c4c4c4;
@@ -55,7 +62,7 @@ a:focus {
 .articles a:hover,
 .articles a:focus {
     background-color: #fff;
-  color:#252525;
+    color:#252525;
 }
 
 .small-text {
