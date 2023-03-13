@@ -27,30 +27,33 @@ const posts = [
       likes: 152
   }
 ]
-// populate artist info 
-const artistImgEl=document.getElementById("artist-pic");
-artistImgEl.innerHTML = `<img src="${posts[0].avatar}" class="artist-avatar" id="artist-avatar" alt="Young image of artist"></img>`
 
-const artistDescrEl=document.getElementById("artist-descr");
-artistDescrEl.innerHTML = 
-`<span class="artist-full-name">${posts[0].name}</span>
-<span class="artist-location">${posts[0].location}</span>`
+function render (posts, post) {
+  // populate artist info 
+  const artistImgEl=document.getElementById("artist-pic");
+  artistImgEl.innerHTML = `<img src="${posts[post].avatar}" class="artist-avatar" id="artist-avatar" alt="Young image of artist"></img>`
 
-// populate main image
-const postImageEl=document.getElementById("main-image");
-postImageEl.innerHTML =
-`<img class="post-image" src="${posts[0].post}" alt="Artist self portrait">`
+  const artistDescrEl=document.getElementById("artist-descr");
+  artistDescrEl.innerHTML = 
+  `<span class="artist-full-name">${posts[post].name}</span>
+  <span class="artist-location">${posts[post].location}</span>`
+  
+  // populate main image
+  const postImageEl=document.getElementById("main-image");
+  postImageEl.innerHTML =
+  `<img class="post-image" src="${posts[post].post}" alt="Artist self portrait">`
 
-// Populate likes
-const likesEl = document.getElementById("likes-count");
-likesEl.innerText = posts[0].likes
+  // Populate likes
+  const likesEl = document.getElementById("likes-count");
+  likesEl.innerText = posts[post].likes
 
-// Populate caption
-const captionEl = document.getElementById("caption");
-captionEl.innerHTML =
-`<span class="username">${posts[0].username}</span>
-<span class="comment">${posts[0].comment}</span>`
+  // Populate caption
+  const captionEl = document.getElementById("caption");
+  captionEl.innerHTML =
+  `<span class="username">${posts[post].username}</span>
+  <span class="comment">${posts[post].comment}</span>`
+}
+
+render(posts, 2);
 
 
-
-console.log(likesEl);
