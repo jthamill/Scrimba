@@ -37,7 +37,8 @@ li {
 .icon {
   width: 25px;
 }
-
+/* used margin to push hamburger menu to far right of flex container */
+/* see "using "margin auto" on flex items" */
 .align-right {
    margin-left:auto;
 }
@@ -50,19 +51,24 @@ h1 {
 
 .item-img {
   width:100%;
+  display:block;
 }
 
 .caption {
   margin: 0px 25px;
+  /*  */
+  display: flex;
+  justify-content: space-between;
+  gap:20px; 
 }
 
 .item {
-   position:relative;
+   position:relative;   
 }
 
 
 
-/* set parent container to position:relative and the element to be positioned absolute */
+/* set parent container to position:relative and the element to be positioned Position:absolute */
 
 .img-banner {
   position: absolute;
@@ -71,4 +77,14 @@ h1 {
   background-color:#cd6858 ;
   color: whitesmoke;
   padding:10px;
+}
+
+
+button {
+  background-color:#cd6858 ;
+  color: whitesmoke;
+  border:none;
+  font-weight:700;
+  padding: 10px 15px;
+  cursor:pointer;
 }
